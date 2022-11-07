@@ -182,11 +182,97 @@
   </div>
 
   <div id="pakravan2020solving" class="col-sm-8">  
-      <div class="title"><h5> <b> Solving inverse-PDE problems with physics-aware neural networks</b></h5></div>
-      <div class="author">  <u>  Pakravan Samira</u>,  Mistani Pouria, Aragon-Calvo Miguel Angel, and Gibou Frederic</div>
+      <div class="title"><h5> <b> JAX-DIPS: Neural bootstrapping of finite discretization methods and application to elliptic problems with discontinuities</b></h5></div>
+      <div class="author"> Pouria Mistani , <u>Samira Pakravan</u>, Rajesh Ilango, and Frederic Gibou</div>
       <div class="periodical">    
-        <em>arXiv preprint arXiv:2001.03608</em>           
-        2020      
+<em>Under Review</em>     
+      </div>   
+    <div class="links">    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>   
+      <a href="https://arxiv.org/abs/2210.14312" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>    
+      <a href="/assets/pdf/JAXDIPS.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>  
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We present a scalable strategy for development of mesh-free hybrid neuro-symbolic partial differen-
+tial equation solvers based on existing mesh-based numerical discretization methods. Particularly,
+this strategy can be used to efficiently train neural network surrogate models for the solution func-
+tions and operators of partial differential equations while retaining the accuracy and convergence
+properties of the state-of-the-art numerical solvers. The presented neural bootstrapping method
+(hereby dubbed NBM) is based on evaluation of the finite discretization residuals of the PDE sys-
+tem obtained on implicit Cartesian cells centered on a set of random collocation points with respect
+to trainable parameters of the neural network. We apply NBM to the important class of elliptic
+problems with jump conditions across irregular interfaces in three spatial dimensions. We show
+the method is convergent such that model accuracy improves by increasing number of collocation
+points in the domain. The algorithms presented here are implemented and released 1 in a software
+package named JAX-DIPS (https://github.com/JAX-DIPS/JAX-DIPS), standing for differentiable
+interfacial PDE solver. JAX-DIPS is purely developed in JAX, offering end-to-end differentiability
+from mesh generation to the higher level discretization abstractions, geometric integrations, and
+interpolations, thus facilitating research into use of differentiable algorithms for developing hybrid
+PDE solvers.</p>
+    </div>
+    
+  </div>
+</div>
+</li>
+
+
+
+
+
+<li><div class="row">
+  <div class="col-sm-2 abbr">  
+    <abbr class="badge">arxiv</abbr>
+  </div>
+  <div id="mistani2020fractional" class="col-sm-8">   
+      <div class="title">Neuro-symbolic partial differential equation solver</div>
+      <div class="author"> Pouria Mistani, <u>Samira Pakravan</u>, RajeshIlango, Sanjay Choudhry, and Frederic Gibou.</div>
+      <div class="periodical">    
+<em>NeurIPS 2022 (ML4Phys)</em>    
+      </div>    
+    <div class="links">    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>   
+      <a href="https://arxiv.org/abs/2210.14907" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>    
+      <a href="/assets/pdf/NeurIPS.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+ </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>We present a highly scalable strategy for developing mesh-free neuro-symbolic
+partial differential equation solvers from existing numerical discretizations found in
+scientific computing. This strategy is unique in that it can be used to efficiently train
+neural network surrogate models for the solution functions and the differential op-
+erators, while retaining the accuracy and convergence properties of state-of-the-art
+numerical solvers. This neural bootstrapping method is based on minimizing resid-
+uals of discretized differential systems on a set of random collocation points with
+respect to the trainable parameters of the neural network, achieving unprecedented
+resolution and optimal scaling for solving physical and biological systems.</p>
+    </div>
+    
+  </div>
+</div>
+</li></ol>
+
+
+
+
+
+
+
+  <h2 class="year">2021</h2>
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+	<abbr class="badge">arxiv</abbr>	  
+  </div>
+
+  <div id="pakravan2020solving" class="col-sm-8">  
+      <div class="title"><h5> <b> Solving inverse-PDE problems with physics-aware neural networks</b></h5></div>
+      <div class="author">  <u>Samira Pakravan</u>, Pouria Mistani, Miguel Angel Aragon-Calvo, and Frederic Gibou</div>
+      <div class="periodical">    
+        <em>Journal of Computational Physics</em>                
       </div>   
     <div class="links">    
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>   
@@ -203,72 +289,7 @@
   </div>
 </div>
 </li>
-
-
-
-
-
-<li><div class="row">
-  <div class="col-sm-2 abbr">  
-    <abbr class="badge">arxiv</abbr>
-  </div>
-  <div id="mistani2020fractional" class="col-sm-8">   
-      <div class="title">A fractional stochastic theory for interfacial polarization of cell aggregates</div>
-      <div class="author"> Mistani, Pouria,Pakravan, Samira, and Gibou, Frederic G.</div>
-      <div class="periodical">    
-        2020   
-      </div>    
-    <div class="links">    
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>   
-      <a href="https://arxiv.org/abs/2008.11819" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>    
-      <a href="/assets/pdf/FPE.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
- </div>
-
-    <!-- Hidden abstract block -->
-    
-    <div class="abstract hidden">
-      <p>We present a theoretical framework to model the electric response of cell aggregates. We establish a coarse representation for each cell as a combination of membrane and cytoplasm dipole moments. Then we compute the effective conductivity of the resulting system, and thereafter derive a Fokker-Planck partial differential equation that captures the time-dependent evolution of the distribution of induced cellular polarizations in an ensemble of cells. Our model predicts that the polarization density parallel to an applied pulse follows a skewed t-distribution, while the transverse polarization density follows a symmetric t-distribution, which are in accordance with our direct numerical simulations. Furthermore, we report a reduced order model described by a coupled pair of ordinary differential equations that reproduces the average and the variance of induced dipole moments in the aggregate. We extend our proposed formulation by considering fractional order time derivatives that we find necessary to explain anomalous relaxation phenomena observed in experiments as well as our direct numerical simulations. Owing to its time-domain formulation, our framework can be easily used to consider nonlinear membrane effects or intercellular couplings that arise in several scientific, medical and technological applications.</p>
-    </div>
-    
-  </div>
-</div>
-</li></ol>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</ol>
 
 
 
@@ -278,51 +299,21 @@
 
   <h2 class="year">2020</h2>
   <ol class="bibliography"><li><div class="row">
-  <div class="col-sm-2 abbr">
-	<abbr class="badge">arxiv</abbr>	  
-  </div>
-
-  <div id="pakravan2020solving" class="col-sm-8">  
-      <div class="title"><h5> <b> Solving inverse-PDE problems with physics-aware neural networks</b></h5></div>
-      <div class="author">  <u>  Pakravan Samira</u>,  Mistani Pouria, Aragon-Calvo Miguel Angel, and Gibou Frederic</div>
-      <div class="periodical">    
-        <em>arXiv preprint arXiv:2001.03608</em>           
-        2020      
-      </div>   
-    <div class="links">    
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>   
-      <a href="https://arxiv.org/abs/2001.03608" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>    
-      <a href="/assets/pdf/BiPDE.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>  
-    </div>
-
-    <!-- Hidden abstract block -->
-    
-    <div class="abstract hidden">
-      <p>We propose a novel composite framework to find unknown fields in the context of inverse problems for partial differential equations (PDEs). We blend the high expressibility of deep neural networks as universal function estimators with the accuracy and reliability of existing numerical algorithms for partial differential equations as custom layers in semantic autoencoders. Our design brings together techniques of computational mathematics, machine learning and pattern recognition under one umbrella to incorporate domain-specific knowledge and physical constraints to discover the underlying hidden fields. The network is explicitly aware of the governing physics through a hard-coded PDE solver layer in contrast to most existing methods that incorporate the governing equations in the loss function or rely on trainable convolutional layers to discover proper discretizations from data. This subsequently focuses the computational load to only the discovery of the hidden fields and therefore is more data efficient. We call this architecture Blended inverse-PDE networks (hereby dubbed BiPDE networks) and demonstrate its applicability for recovering the variable diffusion coefficient in Poisson problems in one and two spatial dimensions, as well as the diffusion coefficient in the time-dependent and nonlinear Burgers’ equation in one dimension. We also show that this approach is robust to noise.</p>
-    </div>
-    
-  </div>
-</div>
-</li>
-
-
-
-
 
 <li><div class="row">
   <div class="col-sm-2 abbr">  
     <abbr class="badge">arxiv</abbr>
   </div>
   <div id="mistani2020fractional" class="col-sm-8">   
-      <div class="title">A fractional stochastic theory for interfacial polarization of cell aggregates</div>
-      <div class="author"> Mistani, Pouria,Pakravan, Samira, and Gibou, Frederic G.</div>
-      <div class="periodical">    
-        2020   
+      <div class="title"><h5> <b>A fractional stochastic theory for interfacial polarization of cell aggregates</b></h5></div>
+      <div class="author"> Pouria Mistani, <u>Samira Pakravan</u>, and Frederic Gibou.</div>
+      <div class="periodical">  
+       <em>Under Review</em>    
       </div>    
     <div class="links">    
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>   
       <a href="https://arxiv.org/abs/2008.11819" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>    
-      <a href="/assets/pdf/FPE.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      <a href="/assets/pdf/frac.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
  </div>
 
     <!-- Hidden abstract block -->
@@ -334,6 +325,11 @@
   </div>
 </div>
 </li></ol>
+
+
+
+
+
 
 
 
@@ -349,77 +345,18 @@
 
   <div id="mistani2019tensor" class="col-sm-8">
     
-      <div class="title">Tensor Network Renormalization as an Ultra-calculus for Complex System Dynamics</div>
-      <div class="author">
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Mistani, Pouria,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Pakravan, Samira,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  and Gibou, Frederic
-                
-              
-            
-          
-        
-      </div>
+      <div class="title"><h5> <b>Tensor Network Renormalization as an Ultra-calculus for Complex System Dynamics</b></h5></div>
+      <div class="author"> Pouria  Mistani, <u>Samira Pakravan</u>, and Frederic Gibou </div>
 
-      <div class="periodical">
-      
-      
-        2019
-      
+      <div class="periodical"> 
+	<em>Sustainable Interdependent Networks II, Springer International Publishing </em>    
       </div>
     
-
     <div class="links">
-    
-    
     
       <a href="https://link.springer.com/chapter/10.1007/978-3-319-98923-5_5" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
     
-    
-    
-    
-    
-    
-    
-    
+
     </div>
 
     <!-- Hidden abstract block -->
@@ -434,68 +371,16 @@
 
   <div id="mistani2019towards" class="col-sm-8">
     
-      <div class="title">Towards a tensor network representation of complex systems</div>
-      <div class="author">
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Mistani, Pouria,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Pakravan, Samira,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  and Gibou, Frederic
-                
-              
-            
-          
-        
-      </div>
+      <div class="title"><h5> <b>Towards a tensor network representation of complex systems</b></h5> </div>
+      <div class="author">Pouria  Mistani, <u>Samira Pakravan</u>, and Frederic Gibou</div>
 
       <div class="periodical">
-      
-      
-        2019
-      
+     <em>Sustainable Interdependent Networks II, Springer International Publishing </em> 
       </div>
     
 
     <div class="links">
-    
-    
-    
+
       <a href="https://link.springer.com/chapter/10.1007/978-3-319-98923-5_4" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
     
     
